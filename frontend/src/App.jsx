@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Upload, Download, Sparkles, ArrowRight, User, Building, Briefcase } from 'lucide-react'
+import { Upload, Download, Sparkles, ArrowRight, User, Building, Briefcase, Coffee, Heart } from 'lucide-react'
 import CompanySelector from './CompanySelector'
 
 function App() {
@@ -376,7 +376,7 @@ function App() {
                         <span className="lilita-one-regular text-sm">{formData.new_company}</span>
                       </div>
                     </div>
-                    <p className="spicy-rice-regular font-bold mt-2 text-3xl">{formData.name.toUpperCase()}</p>
+                    <p className="spicy-rice-regular font-bold mt-2 text-2xl">{formData.name.toUpperCase()}</p>
                     <p className="lilita-one-regular text-sm mt-1 font-bold">
                       {formData.announcement_text === 'CUSTOM' 
                         ? formData.custom_announcement.toUpperCase() 
@@ -389,6 +389,28 @@ function App() {
                 )}
               </div>
             )}
+          </div>
+        </div>
+        
+        {/* Footer */}
+        <div className="mt-16 text-center">
+          <div className="glass-card p-6 mx-auto max-w-md">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Heart className="w-5 h-5 text-red-400" />
+              <h3 className="text-lg font-semibold text-white">Support Tech Trades</h3>
+            </div>
+            <p className="text-white/80 text-sm mb-4">
+              If this tool helped you create awesome career announcements, consider supporting the project!
+            </p>
+            <a
+              href="https://coff.ee/devfolorunso"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 transform hover:scale-105"
+            >
+              <Coffee className="w-4 h-4" />
+              <span>Buy me a coffee</span>
+            </a>
           </div>
         </div>
       </div>
