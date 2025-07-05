@@ -126,7 +126,7 @@ function App() {
           <div className="flex justify-center items-center gap-2 mb-4">
             <Sparkles className="w-8 h-8 text-yellow-400" />
             <h1 className="text-4xl md:text-5xl font-bold text-white">
-              Tech Transfer Announcement
+            Tech Trades
             </h1>
             <Sparkles className="w-8 h-8 text-yellow-400" />
           </div>
