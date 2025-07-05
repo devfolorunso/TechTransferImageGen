@@ -9,6 +9,10 @@ backend/generated/
 backend/uploads/
 backend/fonts/
 
+# Build output
+frontend/dist/
+dist/
+
 # Environment variables
 .env
 .env.local
